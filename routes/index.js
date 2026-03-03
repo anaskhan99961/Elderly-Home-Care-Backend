@@ -1,0 +1,31 @@
+import express from 'express';
+import authRoutes from './authRoutes.js';
+import userRoutes from './userRoutes.js';
+import elderlyRoutes from './elderlyRoutes.js';
+import staffRoutes from './staffRoutes.js';
+import donationRoutes from './donationRoutes.js';
+import familyRoutes from './familyRoutes.js';
+import activityRoutes from './activityRoutes.js';
+import appointmentRoutes from './appointmentRoutes.js';
+import medicalRoutes from './medicalRoutes.js';
+import emergencyRoutes from './emergencyRoutes.js';
+import notificationRoutes from './notificationRoutes.js';
+import staffAssignmentRoutes from './staffAssignmentRoutes.js';
+import adminRoutes from './adminRoutes.js';
+
+const router = express.Router();
+router.use('/auth', authRoutes);
+router.use('/users', userRoutes);
+router.use('/elderly', elderlyRoutes);
+router.use('/staff', staffRoutes);
+router.use('/donations', donationRoutes);
+router.use('/family', familyRoutes);
+router.use('/activities', activityRoutes);
+router.use('/appointments', appointmentRoutes);
+router.use('/medical', medicalRoutes);
+router.use('/emergencies', emergencyRoutes);
+router.use('/notifications', notificationRoutes);
+router.use('/staff-assignments', staffAssignmentRoutes);
+router.use('/admin', adminRoutes);
+
+export default router;
